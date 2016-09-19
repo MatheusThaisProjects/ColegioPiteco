@@ -1,26 +1,36 @@
 <section>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-			<ul class="nav navbar-nav">
-				<li ng-class="{ active:tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)">Home</a>
-				</li>
-				<li ng-class="{ active:tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)">Infraestrutura</a>
-				</li>
-				<li ng-class="{ active:tab.isSet(3) }">
-					<a href ng-click="tab.setTab(3)">Infantil</a>
-				</li>
-				<li ng-class="{ active:tab.isSet(4) }">
-					<a href ng-click="tab.setTab(4)">Fundamental</a>
-				</li>
-				<li ng-class="{ active:tab.isSet(5) }">
-					<a href ng-click="tab.setTab(5)">Médio</a>
-				</li>
-				<li ng-class="{ active:tab.isSet(6) }">
-					<a href ng-click="tab.setTab(6)">Contato</a>
-				</li>
-			</ul>
+			<div class="navbar-header">
+		  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	    	         <span class="icon-bar"></span>
+	    	         <span class="icon-bar"></span>
+	    	         <span class="icon-bar"></span> 
+		  		</button>
+		  		<a class="navbar-brand" href="#">Colégio Piteco</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li ng-class="{ active:tab.isSet(1) }">
+						<a href ng-click="tab.setTab(1)">Home</a>
+					</li>
+					<li ng-class="{ active:tab.isSet(2) }">
+						<a href ng-click="tab.setTab(2)">Infraestrutura</a>
+					</li>
+					<li ng-class="{ active:tab.isSet(3) }">
+						<a href ng-click="tab.setTab(3)">Infantil</a>
+					</li>
+					<li ng-class="{ active:tab.isSet(4) }">
+						<a href ng-click="tab.setTab(4)">Fundamental</a>
+					</li>
+					<li ng-class="{ active:tab.isSet(5) }">
+						<a href ng-click="tab.setTab(5)">Médio</a>
+					</li>
+					<li ng-class="{ active:tab.isSet(6) }">
+						<a href ng-click="tab.setTab(6)">Contato</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
