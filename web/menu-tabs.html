@@ -1,0 +1,35 @@
+<section>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li ng-class="{ active:tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)">Home</a>
+				</li>
+				<li ng-class="{ active:tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)">Infraestrutura</a>
+				</li>
+				<li ng-class="{ active:tab.isSet(3) }">
+					<a href ng-click="tab.setTab(3)">Infantil</a>
+				</li>
+				<li ng-class="{ active:tab.isSet(4) }">
+					<a href ng-click="tab.setTab(4)">Fundamental</a>
+				</li>
+				<li ng-class="{ active:tab.isSet(5) }">
+					<a href ng-click="tab.setTab(5)">Médio</a>
+				</li>
+				<li ng-class="{ active:tab.isSet(6) }">
+					<a href ng-click="tab.setTab(6)">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div>
+		<home-description ng-show="tab.isSet(1)"></home-description>
+		<infra-description ng-show="tab.isSet(2)"></infra-description>
+		<infantil-description ng-show="tab.isSet(3)"></infantil-description>
+		<fundamental-description ng-show="tab.isSet(4)"></fundamental-description>
+		<medio-description ng-show="tab.isSet(5)"></medio-description>
+		<contato-description ng-show="tab.isSet(6)"></contato-description>
+	</div>
+</section>
