@@ -34,4 +34,32 @@
 		};
 	});
 
+	app.directive("infantilDescription", function(){
+		return {
+			restrict: 'E',
+			templateUrl: "infantil-description.html"
+		};
+	});
+
+	app.directive("fundamentalDescription", function(){
+		return {
+			restrict: 'E',
+			templateUrl: "fundamental-description.html"
+		};
+	});
+
+	app.directive("medioDescription", function(){
+		return {
+			restrict: 'E',
+			templateUrl: "medio-description.html"
+		};
+	});
+
+	app.directive("contatoDescription", function(){
+		return {
+			restrict: 'E',
+			templateUrl: "contato-description.html"
+		};
+	});
+
 })();
